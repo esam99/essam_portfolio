@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Esam Zakaria | Portfolio</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f0f4f8;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
       color: #333;
     }
     header {
@@ -17,10 +17,22 @@
       padding: 30px;
       text-align: center;
     }
+    .lang-switch {
+      text-align: right;
+      padding: 15px;
+    }
+    button {
+      background-color: #2E86C1;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
     .container {
       max-width: 900px;
       margin: auto;
-      padding: 30px;
+      padding: 20px;
     }
     h2 {
       color: #2E86C1;
@@ -34,21 +46,33 @@
     li {
       margin-bottom: 8px;
     }
-    .switch {
-      text-align: right;
-      margin: 20px;
-    }
-    button {
-      padding: 8px 16px;
-      background-color: #2E86C1;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
     .arabic {
       direction: rtl;
       font-family: 'Tahoma', sans-serif;
+    }
+    form {
+      margin-top: 20px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+    .submit-btn {
+      background-color: #2E86C1;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 24px; }
+      .container { padding: 10px; }
     }
   </style>
 </head>
@@ -59,7 +83,7 @@
   <p>Applied Mathematics Graduate | Front-End Developer</p>
 </header>
 
-<div class="switch">
+<div class="lang-switch">
   <button onclick="toggleLanguage()">Switch Language</button>
 </div>
 
@@ -98,6 +122,37 @@
     <li>Seeking an opportunity to enhance my skills in application development</li>
     <li>Looking to work in a professional environment in the field of programming</li>
   </ul>
+
+  <h2>Projects</h2>
+  <ul>
+    <li><strong>Portfolio Website:</strong> <a href="https://github.com/esam99/essam_portfolio" target="_blank">View on GitHub</a></li>
+    <li><strong>Android App Demo:</strong> Coming soon</li>
+  </ul>
+
+  <h2>Designs</h2>
+  <ul>
+    <li>UI Mockups using Figma – Coming soon</li>
+    <li>Landing Page Concept – Adobe XD – Coming soon</li>
+  </ul>
+
+  <h2>Download CV</h2>
+  <ul>
+    <li><a href="CV_Esam_English.pdf" download>Click here to download my CV (PDF)</a></li>
+  </ul>
+
+  <h2>Contact Me</h2>
+  <form action="mailto:esamzak0@gmail.com" method="post" enctype="text/plain">
+    <label for="name">Your Name:</label>
+    <input type="text" name="name" required>
+
+    <label for="email">Your Email:</label>
+    <input type="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea name="message" rows="5" required></textarea>
+
+    <input type="submit" value="Send Message" class="submit-btn">
+  </form>
 </div>
 
 <div class="container arabic" id="arabic" style="display:none;">
@@ -135,16 +190,25 @@
     <li>البحث عن فرصة لتطوير مهاراتي في تطوير التطبيقات</li>
     <li>الرغبة في العمل ضمن بيئة احترافية في مجال البرمجة</li>
   </ul>
-</div>
 
-<script>
-  function toggleLanguage() {
-    const en = document.getElementById('english');
-    const ar = document.getElementById('arabic');
-    en.style.display = en.style.display === 'none' ? 'block' : 'none';
-    ar.style.display = ar.style.display === 'none' ? 'block' : 'none';
-  }
-</script>
+  <h2>المشاريع</h2>
+  <ul>
+    <li><strong>موقع شخصي:</strong> <a href="https://github.com/esam99/essam_portfolio" target="_blank">عرض على GitHub</a></li>
+    <li><strong>تطبيق أندرويد تجريبي:</strong> قريبًا</li>
+  </ul>
 
-</body>
-</html>
+  <h2>تصاميم</h2>
+  <ul>
+    <li>نماذج واجهات باستخدام Figma – قريبًا</li>
+    <li>تصميم صفحة هبوط بـ Adobe XD – قريبًا</li>
+  </ul>
+
+  <h2>تحميل السيرة الذاتية</h2>
+  <ul>
+    <li><a href="CV_Esam_English.pdf" download>اضغط هنا لتحميل السيرة الذاتية (PDF)</a></li>
+  </ul>
+
+  <h2>تواصل معي</h2>
+  <form action="mailto:esamzak0@gmail.com" method="post" enctype="text/plain">
+    <label for="name">اسمك:</label>
+    <input type
