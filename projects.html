@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Esam Zakaria | Projects</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #eaf2f8, #d6eaf8);
+      color: #333;
+    }
+    header {
+      background-color: #2E86C1;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+    h2 {
+      color: #2E86C1;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 15px;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .card a {
+      color: #2E86C1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .back-link {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .back-link a {
+      background-color: #2E86C1;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Projects</h1>
+  <p>Explore some of my work in development and design</p>
+</header>
+
+<div class="container">
+  <h2>Project Gallery</h2>
+  <div class="gallery">
+    <div class="card">
+      <img src="projects/portfolio.jpg" alt="Portfolio Website">
+      <h3>Portfolio Website</h3>
+      <p>Responsive personal website built with HTML, CSS, and JavaScript.</p>
+      <a href="https://github.com/esam99/essam_portfolio" target="_blank">View on GitHub</a>
+    </div>
+    <div class="card">
+      <img src="projects/android_demo.jpg" alt="Android App Demo">
+      <h3>Android App Demo</h3>
+      <p>Simple Android app built using Java and XML. Coming soon!</p>
+      <a href="#" target="_blank">Preview</a>
+    </div>
+  </div>
+
+  <div class="back-link">
+    <a href="index.html">← Back to Home</a>
+  </div>
+</div>
+
+</body>
+</html>
