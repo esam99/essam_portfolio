@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f6f8;
+      background: linear-gradient(to bottom right, #eaf2f8, #d6eaf8);
       color: #333;
     }
     header {
@@ -16,6 +16,7 @@
       color: white;
       padding: 30px;
       text-align: center;
+      animation: fadeIn 1s ease-in-out;
     }
     .lang-switch {
       text-align: right;
@@ -28,11 +29,16 @@
       padding: 8px 16px;
       border-radius: 4px;
       cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #1B4F72;
     }
     .container {
       max-width: 900px;
       margin: auto;
       padding: 20px;
+      animation: fadeIn 1.2s ease-in-out;
     }
     h2 {
       color: #2E86C1;
@@ -69,6 +75,14 @@
       padding: 10px 20px;
       border-radius: 4px;
       cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .submit-btn:hover {
+      background-color: #1B4F72;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     @media (max-width: 600px) {
       header h1 { font-size: 24px; }
@@ -201,16 +215,4 @@
   <ul>
     <li>نماذج واجهات باستخدام Figma – قريبًا</li>
     <li>تصميم صفحة هبوط بـ Adobe XD – قريبًا</li>
-  </ul>
-
-  <h2>تحميل السيرة الذاتية</h2>
-  <ul>
-    <li><a href="CV_Esam_English.pdf" download>اضغط هنا لتحميل السيرة الذاتية (PDF)</a></li>
-  </ul>
-
-  <h2>تواصل معي</h2>
-  <form action="https://formspree.io/f/xvgwrayk" method="POST">
-    <label for="name">اسمك:</label>
-    <input type="text" name="name" required>
-
-    <label for="email">بريد
+ 
